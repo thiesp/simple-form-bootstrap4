@@ -73,8 +73,8 @@ SimpleForm.setup do |config|
     b.use :html5
     b.optional :readonly
 
-    b.wrapper tag: 'div', class: 'checkbox' do |ba|
-      ba.use :label_input
+    b.wrapper tag: 'div', class: 'form-check' do |ba|
+      ba.use :label_input, class: 'form-check-input'
     end
 
     b.use :error, wrap_with: { tag: 'small', class: 'text-help text-muted' }
